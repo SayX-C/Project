@@ -6,7 +6,7 @@
 
 ## git add .
 
-**Note:if there is something to commit
+**Note:if there is something to commit**
 
 ## git commit -m "first commit"
 
@@ -16,8 +16,8 @@
 
 ## git push -u origin master
 
-**Note:for the first time only (if you have not done it before)
+**Note:for the first time only (if you have not done it before)**
 
 ## git push origin master
 
-**Note:(for the rest of the time)
+**Note:(for the rest of the time)**
