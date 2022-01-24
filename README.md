@@ -1,5 +1,4 @@
-# Php Project
-------------------------------------------------------------    
+# Php Project  
 # HOW TO SETUP GIT REPO FULL STEPS...
 
 git init
