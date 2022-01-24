@@ -1,23 +1,23 @@
 # HOW TO SETUP GIT REPO FULL STEPS
 
-## `git init`
+## git init
 
-## `git branch -M master`
+## git branch -M master
 
-## `git add .`
+## git add .
 
-**if there is something to commit
+**Note:if there is something to commit
 
-## `git commit -m "first commit"`
+## git commit -m "first commit"
 
-## `git remote add origin [git@github.com:SayX-C/Project.git](git@github.com:SayX-C/Project.git)`
+## git remote add origin [git@github.com:SayX-C/Project.git](git@github.com:SayX-C/Project.git)
 
-## `git pull origin master`
+## git pull origin master
 
-## `git push -u origin master`
+## git push -u origin master
 
-**for the first time only (if you have not done it before)
+**Note:for the first time only (if you have not done it before)
 
-## `git push origin master`
+## git push origin master
 
-(for the rest of the time)
+**Note:(for the rest of the time)
