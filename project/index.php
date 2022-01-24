@@ -26,7 +26,7 @@ $imgUrl = $api->getApiImage();
     <style>
         body {
             background-image: url(<?php echo $imgUrl; ?>);
-            background-size: auto;
+            background-size: 100%;
             background-repeat: no-repeat;
             background-position: center;
             background-color: rgba(25, 25, 255, 0.5);
@@ -48,7 +48,7 @@ $imgUrl = $api->getApiImage();
 </head>
 
 <body class="container-fluid h-100 w-100 g-0">
-    <div class="bg-clr ">
+    <div class="bg-clr border boder-5 boder-dark height">
         <h1 class=" text-center text-danger">Project</h1>
         <div class=" ">
             <h3 class="quotes text-center "><?php echo $quoteApi[0] ?></h3>
