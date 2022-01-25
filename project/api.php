@@ -3,26 +3,23 @@ class Api
 {
     // private $apiKey = "OT18kUoMTgi3Kxa1eTaO1rQrkXDfu2djx9xfJbYy";
     // private $apiUrl = "https://api.nasa.gov/planetary/apod?api_key=";
-    private $apiKey = "random/";
+    private $apiKey = "/1000x1000/?random/";
     private $apiUrl = "https://source.unsplash.com/";
-
     private $api;
 
     private $quoteApiUrl = "https://quotes15.p.rapidapi.com/quotes/random/?language_code=en";
+    private $hostKey     = "quotes15.p.rapidapi.com";
     private $quoteApiKey = "396322c866mshdb64f84aca71b1dp1ff18bjsndd2a8a8b0c5d";
     private $quoteApi;
 
-
     private $headers = array();
-
 
     public function __construct()
     {
-
         $this->api = $this->apiUrl . $this->apiKey;
         $this->quoteApi = $this->quoteApiUrl;
 
-        $this->headers[] = "X-RapidAPI-Host: quotes15.p.rapidapi.com";
+        $this->headers[] = "X-RapidAPI-Host: " . $this->hostKey;
         $this->headers[] = 'X-RapidAPI-Key: ' . $this->quoteApiKey;
     }
     public function getApiImage()
@@ -32,6 +29,8 @@ class Api
         $imgUrl = $responseData->url; 
         return $imgurl*/
         // return $data;
+        /* !if api returns a json object */
+
         return $this->api;
     }
     public function getApiQuote()

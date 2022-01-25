@@ -25,31 +25,32 @@ $imgUrl = $api->getApiImage();
 
     <style>
         body {
+            margin: 0;
             background-image: url(<?php echo $imgUrl; ?>);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-color: rgba(25, 25, 255, 0.5);
-            min-height: 100vh;
+            height: 100vh;
         }
     </style>
 </head>
 
-<body class="container-fluid g-0 img-responsive h-100">
-    <div class="bg-clr g-0">
+<body class="container-fluid g-0 ">
+    <div class="bg-clr  ">
         <div class="d-flex align-content-center justify-content-center text-danger fs-1 text-decoration-underline">
             <h1>Project</h1>
         </div>
-        <div class="container d-flex flex-column align-items-center justify-content-center g-0 h-100">
+        <div class="container d-flex flex-column align-items-center justify-content-center g-2 height">
             <div class="text-center d-flex align-content-center justify-content-center">
                 <p class=" text-light fs-3 "><?php echo $quoteApi[0] ?></p>
             </div>
-            <div class=" d-flex align-content-md-center align-content-sm-start justify-content-center">
+            <div class=" d-flex align-content-md-center align-content-sm-start justify-content-center ">
                 <p class=" text-decoration-underline text-light fs-5">-<?php echo " " . $quoteApi[1] ?></p>
             </div>
         </div>
     </div>
-    <!-- script -->
+    <!-- !script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
