@@ -1,11 +1,8 @@
 .bg-clr {
-	background-color: rgba(97, 24, 139, 0.5);
+	background: rgba(97, 24, 139, 0.5);
 	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-blend-mode: multiply;
 }
 
 .height {
-	min-height: 790px;
+	min-height: max-content;
 }

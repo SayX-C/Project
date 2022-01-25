@@ -26,36 +26,29 @@ $imgUrl = $api->getApiImage();
     <style>
         body {
             background-image: url(<?php echo $imgUrl; ?>);
-            background-size: 100%;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-color: rgba(25, 25, 255, 0.5);
-        }
-
-        .quotes {
-            color: white;
-            font-size: 30px;
-
-        }
-
-        .aurthor {
-            color: white;
-            font-size: 15px;
-            font-weight: bold;
-            text-decoration: underline;
+            min-height: 100vh;
         }
     </style>
 </head>
 
-<body class="container-fluid h-100 w-100 g-0">
-    <div class="bg-clr border boder-5 boder-dark height">
-        <h1 class=" text-center text-danger">Project</h1>
-        <div class=" ">
-            <h3 class="quotes text-center "><?php echo $quoteApi[0] ?></h3>
-            <p class="aurthor text-center ">-<?php echo $quoteApi[1] ?></p>
+<body class="container-fluid g-0 img-responsive h-100">
+    <div class="bg-clr g-0">
+        <div class="d-flex align-content-center justify-content-center text-danger fs-1 text-decoration-underline">
+            <h1>Project</h1>
+        </div>
+        <div class="container d-flex flex-column align-items-center justify-content-center g-0 h-100">
+            <div class="text-center d-flex align-content-center justify-content-center">
+                <p class=" text-light fs-3 "><?php echo $quoteApi[0] ?></p>
+            </div>
+            <div class=" d-flex align-content-md-center align-content-sm-start justify-content-center">
+                <p class=" text-decoration-underline text-light fs-5">-<?php echo " " . $quoteApi[1] ?></p>
+            </div>
         </div>
     </div>
-
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

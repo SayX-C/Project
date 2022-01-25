@@ -3,8 +3,9 @@ class Api
 {
     // private $apiKey = "OT18kUoMTgi3Kxa1eTaO1rQrkXDfu2djx9xfJbYy";
     // private $apiUrl = "https://api.nasa.gov/planetary/apod?api_key=";
-    private $apiKey = "/1400x1000/?random/";
+    private $apiKey = "random/";
     private $apiUrl = "https://source.unsplash.com/";
+
     private $api;
 
     private $quoteApiUrl = "https://quotes15.p.rapidapi.com/quotes/random/?language_code=en";
