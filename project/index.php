@@ -41,7 +41,7 @@ $imgUrl = $api->getApiImage();
         <div class="d-flex align-content-center justify-content-center text-danger fs-1 text-decoration-underline">
             <h1>Project</h1>
         </div>
-        <div class="container d-flex flex-column align-items-center justify-content-center g-2 height">
+        <div class="g-3 container d-flex flex-column align-items-center justify-content-center  height">
             <div class="text-center d-flex align-content-center justify-content-center">
                 <p class=" text-light fs-3 "><?php echo $quoteApi[0] ?></p>
             </div>
